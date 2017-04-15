@@ -1,1 +1,116 @@
 // import all SASS and CSS files here
+
+$purple: #773386;
+
+h1, h2, h3, .panel-title {
+  color: $purple;
+  font-weight: 800;
+}
+
+.panel-body{
+  & h3{
+    font-size: 1.3em;
+  }
+}
+
+.navbar-default{
+  background-color: #f1f3f2;
+  padding-bottom: 10px;
+}
+
+.navbar-header{
+  width: 100%;
+  margin: 20px auto 0;
+  & h2 {
+  }
+}
+
+.brand{
+  max-width: 150px;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.panel-default>.panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0;
+}
+
+.panel-title {
+  font-size: 1.7em;
+  background: #fff;
+  margin: 10px 30px;
+  padding: 20px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  line-height: 1.2em;
+  width: 95%;
+  display: block;
+  & .light {
+    font-weight: 300;
+    font-size: .8em;
+  }
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+
+.style1 {
+  border-color: $purple;
+  border-radius: 0;
+  & h3 {
+    margin-top: 0;
+  }
+}
+
+.style2 {
+  border-radius: 0;
+  & h3 {
+    margin-top: 0;
+  }
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+th {
+  color: $purple;
+}
+
+.panel-body{
+  padding: 10px 45px 30px;
+}
+
+.alert-danger{
+  border-radius: 0;
+  background: #ff0000;
+  color: #fff;
+  padding: 5px 30px;
+  & strong{
+    font-weight: 800;
+  }
+}
+
+.btn-grey{
+  background-color: #bbb;
+  color: #fff;
+  padding: 0px 10px;
+  &:hover{
+    color: $purple;
+  }
+}

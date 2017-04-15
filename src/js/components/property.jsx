@@ -12,17 +12,17 @@ const Property = ({ price }) => {
       <div className="panel-body">
         <div className="row">
           <div className="col-sm-2">
-            <img src="http://placehold.it/150x150"/>
+            <img src="build/img/house.png" className="img-responsive" />
           </div>
           <div className="col-md-7">
-            <h3>Eddington House, 16 Wigginton Road <br/>
+            <h3>Eddington House, 16 Wigginton Road, <br/>
               Tamworth, B79 8PB
             </h3>
           </div>
           <div className="col-md-3 text-right">
             <p>Asking price:</p>
             <h3>£{price}</h3>
-            <button className="btn btn-default">VIEW EXTRAS INCLUDED</button>
+            <button className="btn btn-grey">VIEW EXTRAS INCLUDED</button>
           </div>
         </div>
       </div>

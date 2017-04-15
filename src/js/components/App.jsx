@@ -16,15 +16,17 @@ export default class App extends React.Component {
       <nav className="navbar navbar-default static-top">
         <div className="container-fluid">
           <div className="navbar-header">
-              <img alt="Brand" src="#" />
-              <h2>Secure negotiation centre</h2>
+            <div className="container">
+              <img className="brand" src="build/img/logo.png" />
+              <h2 className="pull-right">Secure negotiation centre</h2>
+            </div>
           </div>
         </div>
       </nav>
 
       <div className="container">
 
-          <Alert status="withdrawn" />
+          <Alert status="Withdrawn" />
           <Property price="189,950" />
           <BuyerDetails name="Mr David Shepherd"/>
         <div className="row">

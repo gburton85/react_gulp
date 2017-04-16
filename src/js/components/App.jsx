@@ -36,30 +36,31 @@ export default class App extends React.Component {
           <Negotiations agent="Robert White"/>
 
       </div>
-      <div className="container-fluid">
 
         <footer>
-          <div className="navbar navbar-default">
             <div className="container">
-              <ul className=" pull-left">
-                <li>CONTACT US</li>
-                <li>FAQ</li>
-                <li>JOIN THE TEAM</li>
-                <li>ABOUT US</li>
-                <li>LIVE HELP</li>
-              </ul>
-              <ul className="pull-right social">
-                <li><i className="fa fa-twitter" aria-hidden="true"></i></li>
-                <li><i className="fa fa-facebook" aria-hidden="true"></i></li>
-                <li><i className="fa fa-youtube" aria-hidden="true"></i></li>
-                <li><i className="fa fa-pinterest-p" aria-hidden="true"></i></li>
-                <li><i className="fa fa-google-plus" aria-hidden="true"></i></li>
-              </ul>
+              <div className="row">
+                <div className="col-md-8">
+                  <ul className="footerNav">
+                    <li>CONTACT US</li>
+                    <li>FAQ</li>
+                    <li>JOIN THE TEAM</li>
+                    <li>ABOUT US</li>
+                    <li>LIVE HELP</li>
+                  </ul>
+                </div>
+                <div className="col-md-4">
+                <ul className="social smallLeft bigRight">
+                  <li><i className="fa fa-twitter" aria-hidden="true"></i></li>
+                  <li><i className="fa fa-facebook" aria-hidden="true"></i></li>
+                  <li><i className="fa fa-youtube" aria-hidden="true"></i></li>
+                  <li><i className="fa fa-pinterest-p" aria-hidden="true"></i></li>
+                  <li><i className="fa fa-google-plus" aria-hidden="true"></i></li>
+                </ul>
+              </div>
             </div>
-          </div>
+            </div>
         </footer>
-
-      </div>
 
     {/* end container */}
   </div>

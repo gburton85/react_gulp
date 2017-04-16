@@ -1,6 +1,12 @@
 // import all SASS and CSS files here
+html {
+  font-family:sans-serif;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%
+}
 
 $purple: #773386;
+$purple_light: #909;
 
 h1, h2, h3, .panel-title {
   color: $purple;
@@ -36,7 +42,7 @@ h1, h2, h3, .panel-title {
 .panel-default>.panel-heading {
   color: #333;
   background-color: #fff;
-  border-color: #fff;
+  border-color: rgba(0,0,0,.0);
 }
 
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
@@ -49,8 +55,8 @@ h1, h2, h3, .panel-title {
   margin: 10px 30px;
   padding: 20px 0;
   padding-bottom: 5px;
-  border-bottom: 1px solid #eee;
-  line-height: 1.2em;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.4em;
   width: 95%;
   display: block;
   & .light {
@@ -76,6 +82,65 @@ h1, h2, h3, .panel-title {
   border-radius: 0;
   & h3 {
     margin-top: 0;
+  }
+}
+
+.style3, .panel-title>.style3 {
+  border-radius: 0;
+  border: 2px solid #ff0000;
+  background: #eee;
+  & h3 {
+    color: #ff0000;
+  }
+}
+
+.style3 .panel-body h3 {
+  margin-top: -5px;
+  padding-bottom: 10px;
+}
+
+.style3>.panel-heading {
+  background: #eee;
+  & .panel-title {
+    background: #eee;
+    width: 85%;
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.style4, .panel-title>.style3 {
+  border-radius: 0;
+}
+
+.style4 .panel-body h3 {
+  margin-top: -5px;
+  padding-bottom: 10px;
+}
+
+.style4>.panel-heading {
+  & .panel-title {
+    width: 85%;
+    padding-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.style3, .style4{
+  max-height: 205px;
+}
+
+.small{
+  font-size: .8em;
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+
+.date{
+  display: inline-block;
+  color: $purple;
+  & span {
+    padding-left: 5px;
   }
 }
 
@@ -110,7 +175,122 @@ th {
   background-color: #bbb;
   color: #fff;
   padding: 0px 10px;
+  text-transform: uppercase;
   &:hover{
     color: $purple;
   }
+}
+
+.btn-purple{
+  background-color: $purple_light;
+  color: #fff;
+  border: 0;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px 10px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  &:hover{
+    color: #000;
+  }
+}
+
+.btn-submit{
+  background-color: #00aeef;
+  color: #fff;
+  margin-top: 5px;
+  border: 0;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  &:hover{
+    color: #000;
+  }
+}
+
+.thumbnail{
+  padding: 20px;
+  border-radius: 0;
+  margin-left: 3px;
+  & span {
+    color: $purple;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  & .btn-purple {
+    margin-top: 0px;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+}
+label {
+  padding-right: 5px;
+}
+
+.marginLeft{
+  margin-left: 35px;
+  @media (max-width:800px){
+    margin-left: 0;
+  }
+}
+
+@media (max-width:800px){
+  .btn-purple, .btn-submit{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+footer{
+  background-color: #545353;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px 0 10px;
+  & ul li {
+    display: inline;
+  }
+  & .fa {
+    color: #bbb;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+}
+
+.footerNav {
+  padding-left: 0px;
+  & li:not(:first-child):before {
+  content: " | ";
+  padding: 5px;
+  }
+}
+
+@media (max-width: 900px) {
+ .smallLeft {
+  float: left;
+  padding-left: 0;
+  }
+}
+
+ @media (min-width: 901px) {
+ .bigRight {
+  float: right;
+  }
+}
+
+.pageEnd{
+  margin-bottom: 40px;
+}
+
+.info{
+  padding-left: 10px;
+}
+
+.hiddenInfo{
+  display: none;
 }
